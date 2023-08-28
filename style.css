@@ -662,7 +662,6 @@ nav .other-links>ul>li:nth-child(4) .user-icon ul li:hover a {
     display: flex;
     overflow: hidden;
     background:var(--bgwhite);
-
 }
 .child-channel-container{
     width: 100%;
@@ -702,10 +701,107 @@ nav .other-links>ul>li:nth-child(4) .user-icon ul li:hover a {
 }
 .channels-container .channel-images .chanel-img img:hover{
     cursor: pointer;
-    /* box-shadow: 2; */
     scale: 1.01;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6),
                 -2px -2px 8px rgba(0, 0, 0, 0.6),
                 -2px 2px 8px rgba(0, 0, 0, 0.6),
                  2px -2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.other-some-images{
+    width: 100%;
+    height: 70vh;
+}
+
+.other-some-images .p-some-img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.other-some-images .p-some-img .some-image{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, #000 40%, transparent 58%),
+    url(https://images-na.ssl-images-amazon.com/images/G/01/digital/video/Magellan_MLP/MLP_Template_Image_Left.jpg);
+    background-position: left top;
+    background-size: cover;
+    background-color: #000;
+}
+
+.other-some-images .p-some-img .some-content{
+    width: 50%;
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.other-some-images .p-some-img .some-content .ch-some-content{
+    display: flex;
+    padding: 6vw 0;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.other-some-images .p-some-img .some-content .ch-some-content > h4{
+    font-size: 40px;
+    color: var(--text-white);
+    letter-spacing: 1px;
+}
+.other-some-images .p-some-img .some-content .ch-some-content > p{
+    padding-top: 4%;
+    font-size: 20px;
+    color: var(--text-white);
+}
+#secondbutton{
+    margin-top: 5%;
+    padding: 1vw 7vw;
+    border-radius: 2px; 
+}
+#some-image{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #000 40%, transparent 58%),
+    url(https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/IN-kids-30Jan._CB1517304519_.jpg);
+    background-position: right top;
+    background-size: cover;
+    background-color: #000;
+}
+#some-content{
+    width: 50%;
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: #222222;
+}
+footer .footer-content{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .footer-content .footer-links ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+footer .footer-content .footer-links ul li > a{
+    font-size: 15px;
+    opacity: .9;
+    font-weight: 400;
+    color: #0e8bca;
+}
+footer .footer-content p{
+    color: #fff;
+    opacity: .5;
+    font-size: 14px;
 }
