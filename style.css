@@ -24,7 +24,8 @@ body {
     height: 100%;
     background: #000;
 }
-.navbar{
+
+.navbar {
     position: sticky;
     z-index: 1000;
 }
@@ -79,8 +80,6 @@ nav .links>ul>li {
     align-items: center;
 }
 
-
-
 a {
     font-size: 17px;
     font-weight: 800;
@@ -123,7 +122,7 @@ i {
     font-size: 17px;
     font-weight: 800;
     color: var(--linksclr);
-   
+
 }
 
 .hover-links {
@@ -409,7 +408,9 @@ nav .other-links ul>li:nth-child(3) .languages .child-language ul li:hover a {
     color: var(--text-black);
 }
 
-nav .other-links ul li:nth-child(3):hover>a,li:nth-child(3):hover>i,.other-links ul li:nth-child(2):hover>a {
+nav .other-links ul li:nth-child(3):hover>a,
+li:nth-child(3):hover>i,
+.other-links ul li:nth-child(2):hover>a {
     color: var(--text-white);
 }
 
@@ -537,68 +538,57 @@ nav .other-links>ul>li:nth-child(4) .user-icon ul li:hover {
 nav .other-links>ul>li:nth-child(4) .user-icon ul li:hover a {
     color: var(--text-black);
 }
-.container{
+
+.image-container {
     height: 100vh;
-    width: 100% ;
+    width: 100%;
     position: relative;
 }
-.container .hero{
+
+.image-container .hero-image-one {
     width: 100%;
     height: inherit;
-}
-.container .hero::after{
-    content: '';
-    background: #000;
-    width: 40%;
-    height: 100vh;
-    position: absolute;
-    z-index: 100;
-    box-shadow:120px 120px 400px #000,
-               120px 120px 400px #000,
-               -120px -120px 400px #000,
-                120px -120px 400px #000;
-}
-.container .hero > img{
-    position: absolute;
-    z-index: 99;
-    width: 100%;
-    height: inherit;
+    background-image: linear-gradient(to right, #000 40%, transparent 58%),
+    url(https://m.media-amazon.com/images/G/31/AmazonVideo/2019/MLP.jpg);
+    background-position: right top;
     background-size: cover;
+    background-color: #000;
 }
-.container .p-text-content{
+
+.image-container .p-text-content {
     height: 100vh;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 100%;
     position: absolute;
     z-index: 101;
-}
-.container .p-text-content .text-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    /* background: red; */
-    width: 100%;
-    height: inherit;
-}
-.container .p-text-content .text-content > h1{
-    color: var(--text-white);
-    font-size: 40px;
-    font-weight: 400;
-    margin-right: 28.5%;
-    margin-top: 5%;
-}
-.container .p-text-content .text-content > h3{
-    margin-top: 2%;
-    margin-left:6%;
-    color: var(--text-white);
-    font-weight: 500;
-    font-size: 22px;
+    padding: 4vw 4vw;
 }
 
-.container .p-text-content .text-content > button{
-    padding: 1vw 4vw;
+.image-container .p-text-content .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container .p-text-content .text-content h3{
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-size: 44px;
+    color: var(--text-white);
+}
+
+.image-container .p-text-content .text-content p{
+    color: var(--text-white);
+    font-size: 22px;
+    letter-spacing: -.3px;
+    font-weight: 300;
+
+}
+.bluebtn{
+    padding: .8vw 4vw;
     border: none;
     background: #0f79af;
     border-radius: 5px;
@@ -606,6 +596,116 @@ nav .other-links>ul>li:nth-child(4) .user-icon ul li:hover a {
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 1px;
-    margin-right: 47%;
     margin-top: 1%;
+}
+.image-container .p-text-content .text-content>button:hover {
+    background-color: #0e8bca;
+    cursor: pointer;
+}
+.image-container-two{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+.image-container-two .hero-image-two{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, #000 40%, transparent 58%),
+    url(https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/TVOD/TVOD_MLP_Left.jp);
+    background-position: left top;
+    background-size: cover;
+    background-color: #000;
+}
+.image-container-two .p-text-two-content {
+    height: 70vh;
+    top: 0;
+    right: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 103;
+    padding: 4vw 4vw;
+    overflow: hidden;
+    
+}
+.image-container-two .p-text-two-content .text-two-content{
+    position: absolute;
+    margin: 0vw 5vw;
+    padding-bottom: 5%;
+    top: 0%;
+    left:50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start ;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4%;
+}
+.text-two-content h3{
+    font-size: 38px;
+    color: var(--text-white);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.text-two-content p{
+    font-size: 20px;
+    color: var(--text-white);
+}
+#secondbtn{
+    padding: 1vw 7vw;
+    border-radius: 2px;
+}
+
+.channels-container{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    overflow: hidden;
+    background:var(--bgwhite);
+
+}
+.child-channel-container{
+    width: 100%;
+    padding: 1vw 6vw;
+    height: 95vh;
+    display: flex;
+    overflow: hidden;
+
+}
+.channels-container .chanel-text{
+    height: 100%;
+    width: 50%;
+}
+.channels-container .chanel-text h4{
+    font-size: 40px;
+    font-weight: 400;
+}
+.channels-container .chanel-text p{
+    margin-top: 3%;
+    font-size: 21px;
+    font-weight: 400;
+}
+.channels-container .channel-images{
+    height: 100%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.channels-container .channel-images .chanel-img{
+    width: 215px;
+    height: 154px;
+
+}
+.channels-container .channel-images .chanel-img img{
+    width: 100%;
+    height: 100%;
+}
+.channels-container .channel-images .chanel-img img:hover{
+    cursor: pointer;
+    /* box-shadow: 2; */
+    scale: 1.01;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6),
+                -2px -2px 8px rgba(0, 0, 0, 0.6),
+                -2px 2px 8px rgba(0, 0, 0, 0.6),
+                 2px -2px 8px rgba(0, 0, 0, 0.6);
 }
